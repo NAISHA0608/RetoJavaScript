@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de porcentaje</title>
-    <link rel="stylesheet" href="../public/css/tailwind.css"> 
+    <title>Calculadora de Porcentaje</title>
+    <link rel="stylesheet" href="../public/css/tailwind.css">
 </head>
-<body class="bg-teal-600 font-sans">
-  <div class="flex justify-center items-center min-h-screen">
-    <div class="bg-blue-900  w-96 h-96 flex flex-col justify-between">
-        <h1 class="text-2xl font-bold text-center text-teal-600">Calculadora de porcentaje</h1>
-
-        <!-- Usamos flex para poner los divs uno al lado del otro -->
-        <div class="flex space-x-4 justify-center">
-            <div class="flex items-center space-x-2">
-                <label for="percentage" class="text-white">Calcula el</label>
-                <input type="number" id="percentage" min="0" max="100" value="10" class="w-28 p-2 bg-teal-600">
-            </div>
-
-            <div class="flex items-center space-x-2">
-                <label for="number" class="text-white">% de</label>
-                <input type="number" id="number" value="30" class="w-28 p-2 border rounded bg-teal-600">
-            </div>
+<body class="bg-[#408c8c] flex items-center justify-center min-h-screen font-mono text-green-300">
+    <div class="bg-[#204c54] p-24 rounded-lg shadow-lg text-center w-full max-w-7xl">
+        <h2 class="text-4xl font-bold mb-8">Calculadora de porcentaje</h2>
+        <hr class="border-[#408c8c] w-full mb-8"> <!-- Aquí se modificó el tamaño de la línea -->
+        <div class="text-center text-white text-2xl mb-8">
+            <label class="text-white">Calcula el</label>
+            <input type="number" id="percentage" class="bg-[#408c8c] text-white rounded px-4 py-2 mx-2 w-64" value="">
+            <label class="text-white">% de</label>
+            <input type="number" id="total" class="bg-[#408c8c] text-white rounded px-4 py-2 mx-2 w-64" value="">
         </div>
-
-        <!-- Contenedor para centrar el botón -->
-        <div class="flex justify-center">
-            <button onclick="calculate()" class="bg-blue-500 text-white p-2 rounded">CALCULAR</button>
+        <div>
+            <button onclick="calcularPorcentaje()" class="bg-[#204c54] text-[#b0f7c8] border-4 border-[#b0f7c8] rounded-lg px-24 py-2 text-2xl font-bold hover:bg-[#408c8c] hover:text-[#204c54] transition">CALCULAR</button>
         </div>
-
-        <div class="mt-4 text-center">
-            <span id="result" class="text-lg font-bold"></span>
+        <div class="mt-8">
+            <span id="resultado" class="text-5xl font-bold text-[#b0f7c8]"></span>
         </div>
     </div>
-  </div>
-  <script src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

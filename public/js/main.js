@@ -1,8 +1,6 @@
-function calculate() {
-  const percentage = parseFloat(document.getElementById('percentage').value);
-  const number = parseFloat(document.getElementById('number').value);
-
-  const result = (percentage / 100) * number;
-
-  document.getElementById('result').innerHTML = `Resultado: ${result}`;
+function calcularPorcentaje() {
+  const percentage = document.getElementById('percentage').value;
+  const total = document.getElementById('total').value;
+  const resultado = (percentage / 100) * total;
+  document.getElementById('resultado').innerText = `Resultado: ${resultado}`;
 }
