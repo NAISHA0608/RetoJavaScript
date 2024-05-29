@@ -826,6 +826,42 @@ select {
   padding: 6rem;
 }
 
+.p-12 {
+  padding: 3rem;
+}
+
+.p-14 {
+  padding: 3.5rem;
+}
+
+.p-16 {
+  padding: 4rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
 .px-24 {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -881,6 +917,11 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#408c8c\] {
+  --tw-text-opacity: 1;
+  color: rgb(64 140 140 / var(--tw-text-opacity));
 }
 
 .shadow-lg {

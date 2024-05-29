@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="../public/css/tailwind.css">
 </head>
 <body class="bg-[#408c8c] flex items-center justify-center min-h-screen font-mono text-green-300">
-    <div class="bg-[#204c54] p-24 rounded-lg shadow-lg text-center w-full max-w-7xl">
+    <div class="bg-[#204c54] p-0 rounded-lg shadow-lg text-center w-full max-w-7xl">
         <h2 class="text-4xl font-bold mb-8">Calculadora de porcentaje</h2>
         <hr class="border-[#408c8c] w-full mb-8"> <!-- Aquí se modificó el tamaño de la línea -->
-        <div class="text-center text-white text-2xl mb-8">
+        <div class="text-center p-4 text-white text-2xl mb-8">
             <label class="text-white">Calcula el</label>
             <input type="number" id="percentage" class="bg-[#408c8c] text-white rounded px-4 py-2 mx-2 w-64" value="">
             <label class="text-white">% de</label>
             <input type="number" id="total" class="bg-[#408c8c] text-white rounded px-4 py-2 mx-2 w-64" value="">
         </div>
-        <div>
-            <button onclick="calcularPorcentaje()" class="bg-[#204c54] text-[#b0f7c8] border-4 border-[#b0f7c8] rounded-lg px-24 py-2 text-2xl font-bold hover:bg-[#408c8c] hover:text-[#204c54] transition">CALCULAR</button>
+        <div class="p-14">
+            <button onclick="calcularPorcentaje()" class="bg-[#204c54] text-[#b0f7c8] border-4 border-[#b0f7c8] rounded-lg p-4 px-24 py-2 text-2xl font-bold hover:bg-[#408c8c] hover:text-[#204c54] transition">CALCULAR</button>
         </div>
-        <div class="mt-8">
+        <div class="mt-8 p-14">
             <span id="resultado" class="text-5xl font-bold text-[#b0f7c8]"></span>
         </div>
     </div>
